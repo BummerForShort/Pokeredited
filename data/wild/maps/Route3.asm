@@ -1,14 +1,14 @@
 Route3WildMons:
 	def_grass_wildmons 20 ; encounter rate
-	db  6, PIDGEY
-	db  5, SPEAROW
-	db  7, PIDGEY
+	db  7, MACHOP
 	db  6, SPEAROW
-	db  7, SPEAROW
-	db  8, PIDGEY
-	db  8, SPEAROW
-	db  3, JIGGLYPUFF
-	db  5, JIGGLYPUFF
+	db  7, EKANS
+	db  6, RHYHORN
+	db  7, RHYHORN
+	db  8, NIDORAN_M 
+	db  8, NIDORAN_F
+	db  6, JIGGLYPUFF
+	db  6, JIGGLYPUFF
 	db  7, JIGGLYPUFF
 	end_grass_wildmons
 
