@@ -8,8 +8,8 @@ Route5WildMons:
 	db 15, DROWZEE 
 	db 16, VULPIX
 	db 16, VULPIX
-	db 14, DROWZEE 
-	db 15, DROWZEE 
+	db 14, PINSIR 
+	db 15, PINSIR 
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
