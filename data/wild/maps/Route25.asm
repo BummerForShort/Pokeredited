@@ -1,6 +1,5 @@
 Route25WildMons:
 	def_grass_wildmons 15 ; encounter rate
-IF DEF(_RED)
 	db 12, SLOWPOKE 
 	db 12, ODDISH 
 	db 13, BELLSPROUT 
