@@ -4173,7 +4173,28 @@ GetDamageVarsForEnemyAttack:
 	ret z ; return if move power is zero
 	ld a, [hl] ; a = [wEnemyMoveType]
 	cp SPECIAL ; types >= SPECIAL are all special
-	jr nc, .specialAttack
+	     ld a, [wEnemyMoveNum]
+         ld b, a
+         jr nc, .isSpecialActuallyPhysical
+         jr .isPhysicalActuallySpecial
+.isSpecialActuallyPhysical
+         ld hl, SpecialToPhysicalMoves
+.specialPhysicalLoop
+         ld a, [hli]
+         cp b
+         jr z, .physicalAttack
+         cp $ff ; end of list
+         jr nz, .specialPhysicalLoop ; keep checking list
+         jr .specialAttack ; Not actually a physical move
+.isPhysicalActuallySpecial
+         ld hl, PhysicalToSpecialMoves
+.physicalSpecialLoop
+         ld a, [hli]
+         cp b
+         jr z, .specialAttack ; the physical move is actually special
+         cp $ff ; end of list
+         jr nz, .physicalSpecialLoop ; keep checking list
+         ; fallthrough
 ; physical attack
 	ld hl, wBattleMonDefense
 	ld a, [hli]
