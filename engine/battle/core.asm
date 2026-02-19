@@ -4295,6 +4295,8 @@ GetDamageVarsForEnemyAttack:
 	and a
 	ret
 
+INCLUDE "data/battle/physical_special_split.
+
 ; get stat c of enemy mon
 ; c: stat to get (STAT_* constant)
 GetEnemyMonStat:
