@@ -1,15 +1,15 @@
 Route13WildMons:
 	def_grass_wildmons 20 ; encounter rate
-	db 26, MANKEY
-	db 26, MACHOP 
-	db 27, FEAROW
-	db 26, FARFETCHD
-	db 28, MACHOKE
-	db 26, PRIMEAPE 
-	db 26, PRIMEAPE 
-	db 27, HITMONLEE
-	db 28, FARFETCHD 
-	db 28, HITMONLEE
+	db 26, RATICATE
+	db 26, NIDORINO 
+	db 27, NIDORINA 
+	db 26, FEAROW
+	db 28, PIDGEOTTO
+	db 26, ARBOK 
+	db 26, ARBOK 
+	db 27, NIDOQUEEN
+	db 28, NIDOKING 
+	db 28, NIDOKING 
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
