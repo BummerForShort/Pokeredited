@@ -7,7 +7,7 @@ SeafoamIslandsB1FWildMons:
 	db 28, POLIWHIRL
 	db 28, HORSEA 
 	db 29, GOLBAT
-	db 28, SEADRA
+	db 32, SEADRA
 	db 28, WARTORTLE 
 	db 38, CLOYSTER 
 	end_grass_wildmons
